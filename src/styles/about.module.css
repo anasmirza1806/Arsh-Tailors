@@ -1,0 +1,262 @@
+.about{
+    padding: 50px 20px; 
+}
+.aboutimg {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.aboutimg img{
+    width: 100%;
+    top: 200px;
+    left: 70%;
+}
+.aboutimg .childimg img{
+    position: absolute;
+    height: 70%;
+    width: 75%;
+}
+.aboutcontet{
+    background-color: #F2E1D9;
+    width: 100%;
+    height: auto;
+    padding: 15% 0%;
+    padding-left: 30%;
+    font-family: "PT Sans", sans-serif;
+}
+.aboutcontet h1{
+    font-weight: 600;
+    width: 50%;
+    font-family: "PT Sans", sans-serif;
+    font-size: 3.5vw;
+}
+
+.aboutcontet h5{
+    font-size: 1.8vw;
+    font-weight: 500;
+    /* line-height: 3rem; */
+    width: 90%;
+}
+.aboutcontet p{
+    font-size: 1.2vw;
+    font-weight: 400;
+    /* line-height: 2rem; */
+    width: 90%;
+    font-family: 'PT Sans',;
+}
+
+.social{
+    text-align: center;
+    padding: 50px 0px;
+    font-family: "PT Sans", sans-serif;
+}
+.social h2{
+    font-size: 3vw;
+    font-weight: 600;
+    letter-spacing: 7px;
+}
+.social p{
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+.insta{
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+.insta img{
+    width: 100%;
+    height: 100%;
+}
+.overlap{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0;
+    z-index: 9;
+    transition: 0.7 ease-in;
+    
+}
+.insta:hover .overlap{
+    opacity: .5;
+    scale: calc(1);
+}
+
+@media screen and (max-width:999px){
+    .aboutcontet h1{
+        font-size: 2.5rem;
+    }
+    
+    .aboutcontet h5{
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+    }
+    .aboutcontet p{
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+    .social{
+        padding: 30px 0px;
+    }
+    .social h2{
+        font-size: 2rem;
+    }
+    .social p{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:768px) {
+        .aboutimg {
+            height: auto;
+        }
+        .aboutimg img{
+            width: auto;
+            top: 338px;
+            left: 40%;
+        }
+        .aboutimg .childimg img{
+            height: 60%;
+            width: 60%;
+        }
+        .aboutcontet{
+            padding: 10% 10%;
+        }
+        .aboutcontet h5{
+            width: 100%;
+        }
+        .aboutcontet p{
+            width: 100%;
+        }
+        .button1{
+            width: 100%;
+        }
+}
+@media screen and (max-width:600px){
+    .aboutimg img{
+        width: 100%;
+        top: 338px;
+        left: 40%;
+    }
+    .aboutimg .childimg img{
+       display: block;
+       visibility: hidden;
+    }
+    .aboutcontet h1{
+        width: 100%;
+    }   
+}
+
+ /* Css for About Page  */
+
+.aboutmain{
+    padding: 100px 0px;
+ }
+ .aboutcontent img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ }
+ .aboutservice{
+    margin-top: 20px;
+    padding: 20px 0px;
+ }
+ .aboutservice .abouttitle h2{
+    width: 90%;
+    padding: 30px 20px;
+    font-weight: 600;
+    font-size: 34px;
+ }
+ .serviceitem{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+ }
+
+ .serviceitem .child1{
+    width: 100%;
+    height: auto;
+ }
+ .serviceitem .child1 img{
+    height: auto;
+    width: 100%;
+ }
+
+ .serviceitem .childservice{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+ }
+ .serviceitem h3{
+    font-size: 20px;
+    font-weight: 600;
+ }
+
+
+.aboutfaqs{
+    padding: 50px 0px;
+    width: 60%;
+    margin: auto;
+ } 
+ .faqshead h3{
+    font-weight: 600;
+    text-align: center;
+    width: 70%;
+    font-size: 40px;
+    margin: auto;
+    line-height: 2.5rem;
+ }
+.faqshead p{
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
+@media screen and ( max-width: 768px) {
+    .aboutservice .abouttitle h2{
+        width: 100%;
+        padding: 10px 10px;
+        font-size: 28px;
+     }
+     .serviceitem{
+        display: block;
+        margin: auto;
+     }
+     .serviceitem .child1{
+        width: 100%;
+        height: 50%;
+        margin: auto;
+     }
+     .serviceitem .child1 img{
+        height: auto;
+        width: 100%;
+     }
+     .serviceitem .childservice{
+        padding-left: 0px;
+     }
+     .serviceitem h3{
+        margin-top: 30px;
+     }
+
+     .aboutfaqs{
+        padding: 30px 10px;
+        width: 100%;
+     } 
+     .faqshead h3{
+        width: 100%;
+        font-size: 30px;
+        line-height: 2rem;
+     }
+    .faqshead p{
+        font-size: 20px;
+    }
+}

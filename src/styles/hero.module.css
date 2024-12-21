@@ -1,0 +1,96 @@
+.hero{
+    padding-top: 60px;
+    font-family: "Poppins";
+}
+.content {
+    background-image: url('../../public/images/hero2.jpg');
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+.info{
+    color: white;
+    text-align: center;
+}
+.info h1{
+    padding-top: 15%;
+    font-weight: 700;
+    font-size: 3vw;
+    font-family: "Poppins";
+    text-shadow: 2px 2px 3px #9c5555;
+}
+.info h3{
+    padding: 20px 0px;
+    width: 100%;
+    font-weight: 600;
+    line-height: 3vw;
+    font-size: 2.5vw;
+}
+.info p{
+    font-size: 1.8vw;
+    font-weight: 500;
+}
+.button1{
+    width: 50%;
+    background: none;
+    /* background-color: white; */
+    color: white;
+    border: 1px solid white;
+    padding: 15px 30px;
+    text-align: center;
+    /* font-size: 1.2vw; */
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .button1:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+  }
+  .button1 p{
+    margin-bottom: 0px;
+    font-weight: 600;
+    font-size: 1.5vw;
+  }
+  
+  
+  @media screen and (max-width:768px){
+    .button1{
+      margin: auto;
+      width: 70%;
+    }
+  }
+@media screen and (max-width: 999px){
+    .info{
+        text-align: left;
+    }
+    .info h1{
+        font-size: 2rem;
+    }
+    .info h3{
+        line-height: 1.8rem;
+        font-size: 1.5rem;
+        width: 80%;
+    }
+    .info p{
+        font-size: 1.2rem;
+    }
+    .button1 p{
+        font-size: 1rem;
+      }
+   
+}
+
+@media screen and (max-width: 768px){
+    .info{
+        text-align: center;
+    } 
+    .info h3{
+        width: 100%;
+    } 
+}

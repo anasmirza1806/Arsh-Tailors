@@ -1,0 +1,62 @@
+.contactmain{
+    padding: 100px 100px;
+    margin: auto;
+}
+.contactmain h1{
+    padding: 20px 0px;
+}
+.name input,textarea{
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.name input:hover,textarea:hover{
+    border: 1px solid #ccc;
+}
+.button1{
+    border: 1px solid #ccc;
+    width: 20%;
+    margin: 10px;
+    /* padding: 10px 10px; */
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+
+}
+.contactmap{
+    margin-top: 50px;
+}
+.contactmap img,iframe{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:767px){
+    .contactmain{
+        padding: 100px 10px;
+    }
+    .contactmain h1{
+        padding: 20px 0px;
+    }
+    .button1{
+        text-align: center;
+        width: 90%;
+        margin: auto;
+    }
+    .contactmap{
+        margin-top: 50px;
+    }
+    .contactmap img,iframe{
+        width: 100%;
+        height: 100%;
+    }
+    .contactmap iframe{
+        margin-top: 30px;
+    }
+}

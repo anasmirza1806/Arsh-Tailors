@@ -1,0 +1,172 @@
+.card{
+    margin: 25px 0px;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid #ccc;
+    /* box-shadow: 0px 0px 2px rgba(0,0,0,0.2); */
+}
+.card .img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.card .img img{
+    width: 100%;
+    height: auto;
+    transition: all .5s ease-in ;
+}
+.card .img img:hover{
+    transform: scale(1.1);
+    
+}
+.card .details{
+    padding: 10px 0px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 600;
+}
+.card .details h3{
+    font-size: 2.2vw;
+}
+.card .details p{
+    font-size: 1.5vw;
+}
+.card .button1{
+    padding: 10px 50px;
+    border: 1px solid #ccc;
+    margin: auto;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 10px;
+}
+.card .button1:hover{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    transition: all 0.5s ease-in;
+}
+.card .button1 p{
+    margin-bottom: 0px;
+    font-size: 1.2vw;
+
+}
+
+.button2{
+    padding: 10px 50px;
+    border: 1px solid #ccc;
+    width: 30%;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+}
+.button2 p{
+    margin-bottom: 0px;
+    font-size: 1.6vw;
+
+}
+.button2:hover{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    transition: all 0.5s ease-in;
+}
+
+@media screen and (max-width: 999px){
+    .card .details h3{
+        font-size: 2rem;
+    }
+    .card .details p{
+        font-size: 1.3rem;
+    }
+    .card .button1 p{
+        font-size: 1.1rem;
+    }
+    .button2 p{
+        font-size: 1.1rem;
+    }
+    .button2{
+      margin: auto;
+      width: 80%;
+    }
+}
+
+
+
+ /* Shop Page */
+
+ .shop{
+    padding: 100px 0px;
+ }
+ .headshop{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+ }
+ .search input{
+    outline: none;
+    padding: 10px;
+    border-radius: 0%;
+    border: 1px solid #ccc;
+ }
+ .search i{
+    /* border: 1px solid #000000; */
+    border: 1px solid #ccc;
+    padding: 14px;
+    border-radius: 0%;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+ }
+
+ .filter select{
+    padding: 10px 15px;
+    outline: none;
+    background-color: white;
+ }
+
+ .category{
+    padding: 20px 0px;
+    font-family: 'PT Sans', sans-serif;
+    
+ }
+ .category input{
+    flex-direction: column;
+    font-size: 20px;
+    margin: 15px 10px;
+ }
+
+ .pagination{
+    padding: 10px 0px;
+    margin: auto;
+    width: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .pagination .btn1{
+    padding: 10px 20px;
+    background-color: white;
+    margin-right: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+ }
+ .pagination .btn1:hover{
+    background-color: black;
+    color: white;
+    transition: all 0.5s ease-in-out;
+ }
+
+@media screen and (max-width:540px) {
+    .shop .headshop{
+        display: block;
+    }
+    .shop .filter{
+        margin-top: 20px;
+    }
+    .shop .pagination{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
