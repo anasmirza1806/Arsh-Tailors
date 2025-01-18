@@ -40,10 +40,10 @@ const User = () => {
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename='/Arsh-Tailors'>
       <Navbar/>
         <Routes>
-          <Route path='/' element={<Home/>} />
+          <Route exact path='/Arsh-Tailors' element={<Home/>} />
           <Route path='/gallery' element={<Shop/>} />
           <Route path='/about' element={<About/>} />
           <Route path='/accounts/profile' element={<Shop />} />
